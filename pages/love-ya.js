@@ -21,6 +21,7 @@ const feedbackText = [
     "hihihihihihihih",
     'Que saudade hihi 💏 ',
     'Me beja 😽 ',
+    'Amorzinho da minha vida 😘 ',
 ]
 
 export default function LoveYa() {
