@@ -12,10 +12,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        CAROLINDA
-        <Link href={'/teste'}>TESTEEEEEEEEEEEe</Link>
-
-        <Image src={'/niagara.jpeg'} width={300} height={300} />
+        TE AMO 💟 
       </main>
     </div>
   )
