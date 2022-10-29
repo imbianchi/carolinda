@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
@@ -13,6 +14,8 @@ export default function Home() {
       <main className={styles.main}>
         CAROLINDA
         <Link href={'/teste'}>TESTEEEEEEEEEEEe</Link>
+
+        <Image src={'/niagara.jpeg'} width={300} height={300} />
       </main>
     </div>
   )
