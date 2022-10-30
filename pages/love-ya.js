@@ -25,7 +25,7 @@ const feedbackText = [
 ]
 
 export default function LoveYa() {
-    const [feedback, setFeedback] = useState('Amo voce tambem 💕')
+    const [feedback, setFeedback] = useState('Clique nas maozinhas, pezinhos e olhinhos da nossa amiguinha pinguim 😊 ')
     const [penquinTooltip, setPenguinTooltip] = useState(false)
 
     const handleClick = () => {
@@ -46,7 +46,7 @@ export default function LoveYa() {
                 <button
                     type='button'
                     className='btn btn-lg btn-light'
-                    onClick={handleClick}
+                    // onClick={handleClick}
                 >
                     {
                         feedback
