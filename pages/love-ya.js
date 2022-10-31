@@ -1,15 +1,9 @@
 import { Tooltip } from 'react-bootstrap'
 import Head from 'next/head'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import $ from 'jquery';
 import styles from '../styles/Home.module.css'
 
-$(document).ready(function() {
-    $('.hover').on('touchstart touchend', function(e) {
-        e.preventDefault();
-        $(this).toggleClass('hover_effect');
-    });
-});
 
 const feedbackText = [
     'Ja falei que te amo! hihi',
@@ -43,6 +37,13 @@ export default function LoveYa() {
 
     //     setFeedback(choosenText)
     // }
+
+    useEffect(() => {
+        $('.hover').on('touchstart touchend', function(e) {
+            e.preventDefault();
+            $(this).toggleClass('hover_effect');
+        });
+    })
 
     return (
         <div className={styles.container}>
