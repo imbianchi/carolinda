@@ -1,7 +1,5 @@
-import { Tooltip } from 'react-bootstrap'
 import Head from 'next/head'
-import { useEffect, useState } from 'react'
-import $ from 'jquery';
+import { useState } from 'react'
 import styles from '../styles/Home.module.css'
 
 
@@ -28,7 +26,7 @@ const feedbackText = [
 ]
 
 export default function LoveYa() {
-    const [feedback, setFeedback] = useState('Clique para encontrar as mensagens ocultas na nossa nova amiga Srta. Picollina 😊 ')
+    const [feedback, setFeedback] = useState('Arraste o mouse para encontrar as mensagens ocultas na nossa nova amiga Srta. Picollina 😊 ')
     // const [penquinTooltip, setPenguinTooltip] = useState(false)
 
     // const handleClick = () => {
@@ -37,13 +35,6 @@ export default function LoveYa() {
 
     //     setFeedback(choosenText)
     // }
-
-    useEffect(() => {
-        $('.hover').on('touchstart touchend', function(e) {
-            e.preventDefault();
-            $(this).toggleClass('hover_effect');
-        });
-    })
 
     return (
         <div className={styles.container}>
