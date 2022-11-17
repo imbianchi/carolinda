@@ -16,7 +16,7 @@ export default function Home() {
           className='btn btn-lg btn-light'
           onClick={() => window.location.href = 'https://imbianchi.github.io/carolinda/love-ya'}
         >
-          🙆  So quem e curioso pode clicar nesse botao hahah 💃
+          Nunca mais nem abriu o sitezinho que fiz pro amorzinho
         </button>
       </main>
     </div>
